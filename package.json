@@ -1,0 +1,23 @@
+{
+  "name": "timsite",
+  "version": "1.0.0",
+  "description": "Site voor Tim",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/scc67/TimSite.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/scc67/TimSite/issues"
+  },
+  "homepage": "https://github.com/scc67/TimSite#readme",
+  "devDependencies": {
+    "node": "^12.8.0",
+    "npm": "^6.10.3"
+  }
+}
