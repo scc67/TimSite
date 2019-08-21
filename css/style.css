@@ -1,0 +1,12 @@
+.bgImage {
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  background-color: #464646;
+}
+
+.bgImage--imgFront {
+  background-image: url(/assets/images/building.jpg);
+  height: 650px;
+}
