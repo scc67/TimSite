@@ -4,9 +4,47 @@
   background-attachment: fixed;
   background-size: cover;
   background-color: #464646;
+  -webkit-background-clip: text;
+  background-clip: text;
 }
 
 .bgImage--imgFront {
   background-image: url(/assets/images/building.jpg);
-  height: 650px;
+}
+
+.bgImage--txtFront {
+  color: transparent;
+  font-size: 12em;
+  text-align: center;
+  font-weight: 600;
+}
+
+@media (min-width: 372px) {
+  .bgImage--txtFront {
+    font-size: 15em;
+  }
+}
+
+@media (min-width: 576px) {
+  .bgImage--txtFront {
+    font-size: 20em;
+  }
+}
+
+@media (min-width: 768px) {
+  .bgImage--txtFront {
+    font-size: 30em;
+  }
+}
+
+@media (min-width: 992px) {
+  .bgImage--txtFront {
+    font-size: 35em;
+  }
+}
+
+@media (min-width: 1200px) {
+  .bgImage--txtFront {
+    font-size: 40em;
+  }
 }

@@ -4,8 +4,29 @@
     background-attachment: fixed;
     background-size: cover;
     background-color: #464646;
+    background-clip: text;
     &--imgFront {
         background-image: url(/assets/images/building.jpg);
-        height: 650px;
+    }
+    &--txtFront {
+        color: transparent;
+        font-size: 12em;
+        text-align: center;
+        font-weight: 600;
+        @include atXSmall {
+            font-size: 15em;
+        }
+        @include atSmall {
+            font-size: 20em;
+        }
+        @include atMedium {
+            font-size: 30em;
+        }
+        @include atLarge {
+            font-size: 35em;
+        }
+        @include atXlarge {
+            font-size: 40em;
+        }
     }
 }
