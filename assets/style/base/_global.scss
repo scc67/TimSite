@@ -1,0 +1,9 @@
+.navbar {
+    &--no-padding-until-large {
+        padding: 0rem 1rem;
+
+        @include atLarge {
+            padding: 1rem 1rem;
+        }
+    }    
+}

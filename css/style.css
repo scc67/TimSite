@@ -1,3 +1,13 @@
+.navbar--no-padding-until-large {
+  padding: 0rem 1rem;
+}
+
+@media (min-width: 992px) {
+  .navbar--no-padding-until-large {
+    padding: 1rem 1rem;
+  }
+}
+
 .bgImage {
   background-position: center center;
   background-repeat: no-repeat;

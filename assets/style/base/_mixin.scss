@@ -13,4 +13,3 @@
 @mixin atXlarge {
     @media (min-width: 1200px) { @content; }
 }
-//TODO Padding top and bottom verwijderen bij ipad en kleiner door max media mixin en navar module met mixin
