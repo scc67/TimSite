@@ -1,0 +1,47 @@
+.head {
+    background-color: green;
+    &__title {
+        color: white;
+        font-size: 10rem;
+        text-align: center;
+        font-weight: 400;
+        padding: 0;
+        @include atXSmall {
+            font-size: 12rem;
+        }
+        @include atSmall {
+            font-size: 20rem;
+        }
+        @include atMedium {
+            font-size: 20rem;
+        }
+        @include atLarge {
+            font-size: 20rem;
+        }
+        @include atXlarge {
+            font-size: 25rem;
+        }
+    }
+    &__subTitle {
+        color: white;
+        font-size: 2rem;
+        text-align: center;
+        font-weight: 200;
+        padding-bottom: 0.5rem;
+        @include atXSmall {
+            font-size: 2rem;
+        }
+        @include atSmall {
+            font-size: 3rem;
+        }
+        @include atMedium {
+            font-size: 3rem;
+        }
+        @include atLarge {
+            font-size: 4rem;
+        }
+        @include atXlarge {
+            font-size: 4rem;
+        }
+    }
+}
