@@ -1,0 +1,42 @@
+.gridFront {
+    --mainbackround: rgba(33, 149, 243, 0.657);
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(362px, 2fr));
+    grid-auto-rows: auto;
+    grid-gap: 16px;
+    &__engels {
+        background-color: var(--mainbackround);
+        border-radius: 1.3rem;
+        padding: 2rem;
+    }
+    &__nederlands {
+        background-color: var(--mainbackround);
+        border-radius: 1.3rem;
+        padding: 2rem;
+    }
+    &__wiskunde {
+        background-color: var(--mainbackround);
+        border-radius: 1.3rem;
+        padding: 2rem;
+    }
+    &__biologie {
+        background-color: var(--mainbackround);
+        border-radius: 1.3rem;
+        padding: 2rem;
+    }
+    &__geschiedenis {
+        background-color: var(--mainbackround);
+        border-radius: 1.3rem;
+        padding: 2rem;
+    }
+    &__aarderijkskunde {
+        background-color: var(--mainbackround);
+        border-radius: 1.3rem;
+        padding: 2rem;
+    }
+    &__frans {
+        background-color: var(--mainbackround);
+        border-radius: 1.3rem;
+        padding: 2rem;
+    }
+}
