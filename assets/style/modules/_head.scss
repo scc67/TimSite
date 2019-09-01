@@ -5,31 +5,28 @@
         font-size: 10rem;
         text-align: center;
         font-weight: 400;
-        line-height: 14rem;
+        line-height: 10rem;
         padding: 0;
-        @include atXSmall {
-            font-size: 12rem;
-            line-height: 14rem;
-        }
         @include atMedium {
-            font-size: 20rem;
-            line-height: 23rem;
+            font-size: 12rem;
+            line-height: 12rem;
         }
         @include atXlarge {
-            font-size: 25rem;
-            line-height: 28rem;
+            font-size: 15rem;
+            line-height: 15rem;
         }
     }
     &__subTitle {
         color: white;
-        font-size: 2rem;
+        font-size: 1.5rem;
         text-align: center;
         font-weight: 200;
         padding-bottom: 1.5rem;
-        line-height: 2rem;
+        line-height: 1.5rem;
+        margin-bottom: 0;
         @include atMedium {
-            font-size: 3rem;
-            line-height: 3rem;
+            font-size: 2rem;
+            line-height: 2rem;
             padding-bottom: 1.5rem;
         }
     }

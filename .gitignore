@@ -27,6 +27,9 @@ nbproject
 _notes
 dwsync.xml
 
+# orginele foto's
+assets/images/originals/*
+
 #Visual studio code
 .vscode/*
 !.vscode/settings.json

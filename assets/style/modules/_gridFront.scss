@@ -1,42 +1,72 @@
 .gridFront {
     --mainbackround: rgba(33, 149, 243, 0.657);
+    --textcolor: white;
+    --textcolorhover: #bbb;
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(362px, 2fr));
+    grid-template-columns: repeat(auto-fit, minmax(342px, 2fr));
     grid-auto-rows: auto;
-    grid-gap: 16px;
+    grid-gap: 1rem;
+    background-color: var(--mainbackround);
+    padding: 1rem;
+    // TODO iets verzinnen om blauwe kleur door te laten lpen tot onder 
+
+    @include atXlarge {
+        grid-template-columns: repeat(3, 1fr);
+    }
     &__engels {
-        background-color: var(--mainbackround);
-        border-radius: 1.3rem;
-        padding: 2rem;
+        background-image: url("/assets/images/england-lo-re.jpg");
+        @include vakken;
+        @include hover;
+        @include atXlarge {
+            background-image: url("/assets/images/england-hi-re.jpg");
+        }
     }
     &__nederlands {
-        background-color: var(--mainbackround);
-        border-radius: 1.3rem;
-        padding: 2rem;
+        background-image: url("/assets/images/dutch-lo-re.jpg");
+        @include vakken;
+        @include hover;
+        @include atXlarge {
+            background-image: url("/assets/images/dutch-hi-re.jpg");
+        }
     }
     &__wiskunde {
-        background-color: var(--mainbackround);
-        border-radius: 1.3rem;
-        padding: 2rem;
+        background-image: url("/assets/images/math-lo-re.jpg");
+        @include vakken;
+        @include hover;
+        @include atXlarge {
+            background-image: url("/assets/images/math-hi-re.jpg");
+        }
     }
     &__biologie {
-        background-color: var(--mainbackround);
-        border-radius: 1.3rem;
-        padding: 2rem;
+        background-image: url("/assets/images/biology-lo-re.jpg");
+        @include vakken;
+        @include hover;
+        @include atXlarge {
+            background-image: url("/assets/images/biology-hi-re.jpg");
+        }
     }
     &__geschiedenis {
-        background-color: var(--mainbackround);
-        border-radius: 1.3rem;
-        padding: 2rem;
+        background-image: url("/assets/images/history-lo-re.jpg");
+        @include vakken;
+        @include hover;
+        @include atXlarge {
+            background-image: url("/assets/images/history-hi-re.jpg");
+        }
     }
     &__aarderijkskunde {
-        background-color: var(--mainbackround);
-        border-radius: 1.3rem;
-        padding: 2rem;
+        background-image: url("/assets/images/geography-lo-re.jpg");
+        @include vakken;
+        @include hover;
+        @include atXlarge {
+            background-image: url("/assets/images/geography-hi-re.jpg");
+        }
     }
     &__frans {
-        background-color: var(--mainbackround);
-        border-radius: 1.3rem;
-        padding: 2rem;
+        background-image: url("/assets/images/france-lo-re.jpg");
+        @include vakken;
+        @include hover;
+        @include atXlarge {
+            background-image: url("/assets/images/france-hi-re.jpg");
+        }
     }
 }

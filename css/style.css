@@ -68,95 +68,220 @@
   font-size: 10rem;
   text-align: center;
   font-weight: 400;
-  line-height: 14rem;
+  line-height: 10rem;
   padding: 0;
-}
-
-@media (min-width: 372px) {
-  .head__title {
-    font-size: 12rem;
-    line-height: 14rem;
-  }
 }
 
 @media (min-width: 768px) {
   .head__title {
-    font-size: 20rem;
-    line-height: 23rem;
+    font-size: 12rem;
+    line-height: 12rem;
   }
 }
 
 @media (min-width: 1200px) {
   .head__title {
-    font-size: 25rem;
-    line-height: 28rem;
+    font-size: 15rem;
+    line-height: 15rem;
   }
 }
 
 .head__subTitle {
   color: white;
-  font-size: 2rem;
+  font-size: 1.5rem;
   text-align: center;
   font-weight: 200;
   padding-bottom: 1.5rem;
-  line-height: 2rem;
+  line-height: 1.5rem;
+  margin-bottom: 0;
 }
 
 @media (min-width: 768px) {
   .head__subTitle {
-    font-size: 3rem;
-    line-height: 3rem;
+    font-size: 2rem;
+    line-height: 2rem;
     padding-bottom: 1.5rem;
   }
 }
 
 .gridFront {
   --mainbackround: rgba(33, 149, 243, 0.657);
+  --textcolor: white;
+  --textcolorhover: #bbb;
   display: -ms-grid;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(362px, 2fr));
+  grid-template-columns: repeat(auto-fit, minmax(342px, 2fr));
   grid-auto-rows: auto;
-  grid-gap: 16px;
+  grid-gap: 1rem;
+  background-color: var(--mainbackround);
+  padding: 1rem;
+  height: 100%;
+}
+
+@media (min-width: 1200px) {
+  .gridFront {
+    -ms-grid-columns: (1fr)[3];
+    grid-template-columns: repeat(3, 1fr);
+  }
 }
 
 .gridFront__engels {
-  background-color: var(--mainbackround);
+  background-image: url("/assets/images/england-lo-re.jpg");
+  --textcolorshadow: #000000;
+  background-color: #cccccc;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
   border-radius: 1.3rem;
   padding: 2rem;
+  color: var(--textcolor);
+  text-shadow: 2px 2px 4px var(--textcolorshadow);
+}
+
+.gridFront__engels:hover {
+  --textcolor: var(--textcolorhover);
+}
+
+@media (min-width: 1200px) {
+  .gridFront__engels {
+    background-image: url("/assets/images/england-hi-re.jpg");
+  }
 }
 
 .gridFront__nederlands {
-  background-color: var(--mainbackround);
+  background-image: url("/assets/images/dutch-lo-re.jpg");
+  --textcolorshadow: #000000;
+  background-color: #cccccc;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
   border-radius: 1.3rem;
   padding: 2rem;
+  color: var(--textcolor);
+  text-shadow: 2px 2px 4px var(--textcolorshadow);
+}
+
+.gridFront__nederlands:hover {
+  --textcolor: var(--textcolorhover);
+}
+
+@media (min-width: 1200px) {
+  .gridFront__nederlands {
+    background-image: url("/assets/images/dutch-hi-re.jpg");
+  }
 }
 
 .gridFront__wiskunde {
-  background-color: var(--mainbackround);
+  background-image: url("/assets/images/math-lo-re.jpg");
+  --textcolorshadow: #000000;
+  background-color: #cccccc;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
   border-radius: 1.3rem;
   padding: 2rem;
+  color: var(--textcolor);
+  text-shadow: 2px 2px 4px var(--textcolorshadow);
+}
+
+.gridFront__wiskunde:hover {
+  --textcolor: var(--textcolorhover);
+}
+
+@media (min-width: 1200px) {
+  .gridFront__wiskunde {
+    background-image: url("/assets/images/math-hi-re.jpg");
+  }
 }
 
 .gridFront__biologie {
-  background-color: var(--mainbackround);
+  background-image: url("/assets/images/biology-lo-re.jpg");
+  --textcolorshadow: #000000;
+  background-color: #cccccc;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
   border-radius: 1.3rem;
   padding: 2rem;
+  color: var(--textcolor);
+  text-shadow: 2px 2px 4px var(--textcolorshadow);
+}
+
+.gridFront__biologie:hover {
+  --textcolor: var(--textcolorhover);
+}
+
+@media (min-width: 1200px) {
+  .gridFront__biologie {
+    background-image: url("/assets/images/biology-hi-re.jpg");
+  }
 }
 
 .gridFront__geschiedenis {
-  background-color: var(--mainbackround);
+  background-image: url("/assets/images/history-lo-re.jpg");
+  --textcolorshadow: #000000;
+  background-color: #cccccc;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
   border-radius: 1.3rem;
   padding: 2rem;
+  color: var(--textcolor);
+  text-shadow: 2px 2px 4px var(--textcolorshadow);
+}
+
+.gridFront__geschiedenis:hover {
+  --textcolor: var(--textcolorhover);
+}
+
+@media (min-width: 1200px) {
+  .gridFront__geschiedenis {
+    background-image: url("/assets/images/history-hi-re.jpg");
+  }
 }
 
 .gridFront__aarderijkskunde {
-  background-color: var(--mainbackround);
+  background-image: url("/assets/images/geography-lo-re.jpg");
+  --textcolorshadow: #000000;
+  background-color: #cccccc;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
   border-radius: 1.3rem;
   padding: 2rem;
+  color: var(--textcolor);
+  text-shadow: 2px 2px 4px var(--textcolorshadow);
+}
+
+.gridFront__aarderijkskunde:hover {
+  --textcolor: var(--textcolorhover);
+}
+
+@media (min-width: 1200px) {
+  .gridFront__aarderijkskunde {
+    background-image: url("/assets/images/geography-hi-re.jpg");
+  }
 }
 
 .gridFront__frans {
-  background-color: var(--mainbackround);
+  background-image: url("/assets/images/france-lo-re.jpg");
+  --textcolorshadow: #000000;
+  background-color: #cccccc;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
   border-radius: 1.3rem;
   padding: 2rem;
+  color: var(--textcolor);
+  text-shadow: 2px 2px 4px var(--textcolorshadow);
+}
+
+.gridFront__frans:hover {
+  --textcolor: var(--textcolorhover);
+}
+
+@media (min-width: 1200px) {
+  .gridFront__frans {
+    background-image: url("/assets/images/france-hi-re.jpg");
+  }
 }
