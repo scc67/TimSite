@@ -4,25 +4,27 @@
     --textcolorhover: #bbb;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(280px, 2fr));
-    grid-auto-rows: auto;
+    grid-auto-rows: 1fr;
     grid-gap: 1rem;
     background-color: var(--mainbackround);
-    padding: 2rem 2.5rem;
-    // TODO iets verzinnen om blauwe kleur door te laten lpen tot onder 
+    padding: 1rem;
     @include atXSmall {
         grid-template-columns: repeat(auto-fit, minmax(342px, 2fr));   
     }
     @include atXlarge {
         grid-template-columns: repeat(3, 1fr);
+        padding: 2rem 2.5rem;
     }
     &__vak {
+        background-color: white;
+        border-radius: 1.3rem;
         & p {
             display: none;
             background-color: white;
-            border-radius: 0 0 1.3rem 1.3rem;
+            // border-radius: 0 0 1.3rem 1.3rem;
             padding: 2rem;
             height: auto;
-            @include atMedium {
+            @include atLarge {
                 display: block;
                 
             }
@@ -32,7 +34,7 @@
         background-image: url("/assets/images/england-lo-re.jpg");
         @include vakken;
         @include hover;
-        @include atMedium {
+        @include atLarge {
             border-radius: 1.3rem 1.3rem 0 0;
         }
         @include atXlarge {
@@ -44,7 +46,7 @@
         background-image: url("/assets/images/dutch-lo-re.jpg");
         @include vakken;
         @include hover;
-        @include atMedium {
+        @include atLarge {
             border-radius: 1.3rem 1.3rem 0 0;
         }
         @include atXlarge {
@@ -55,6 +57,9 @@
         background-image: url("/assets/images/math-lo-re.jpg");
         @include vakken;
         @include hover;
+        @include atLarge {
+            border-radius: 1.3rem 1.3rem 0 0;
+        }
         @include atXlarge {
             background-image: url("/assets/images/math-hi-re.jpg");
         }
@@ -63,6 +68,9 @@
         background-image: url("/assets/images/biology-lo-re.jpg");
         @include vakken;
         @include hover;
+        @include atLarge {
+            border-radius: 1.3rem 1.3rem 0 0;
+        }
         @include atXlarge {
             background-image: url("/assets/images/biology-hi-re.jpg");
         }
@@ -71,6 +79,9 @@
         background-image: url("/assets/images/history-lo-re.jpg");
         @include vakken;
         @include hover;
+        @include atLarge {
+            border-radius: 1.3rem 1.3rem 0 0;
+        }
         @include atXlarge {
             background-image: url("/assets/images/history-hi-re.jpg");
         }
@@ -79,6 +90,9 @@
         background-image: url("/assets/images/geography-lo-re.jpg");
         @include vakken;
         @include hover;
+        @include atLarge {
+            border-radius: 1.3rem 1.3rem 0 0;
+        }
         @include atXlarge {
             background-image: url("/assets/images/geography-hi-re.jpg");
         }
@@ -87,6 +101,9 @@
         background-image: url("/assets/images/france-lo-re.jpg");
         @include vakken;
         @include hover;
+        @include atLarge {
+            border-radius: 1.3rem 1.3rem 0 0;
+        }
         @include atXlarge {
             background-image: url("/assets/images/france-hi-re.jpg");
         }
