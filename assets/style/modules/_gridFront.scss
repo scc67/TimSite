@@ -3,28 +3,50 @@
     --textcolor: white;
     --textcolorhover: #bbb;
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(342px, 2fr));
+    grid-template-columns: repeat(auto-fit, minmax(280px, 2fr));
     grid-auto-rows: auto;
     grid-gap: 1rem;
     background-color: var(--mainbackround);
-    padding: 1rem;
+    padding: 2rem 2.5rem;
     // TODO iets verzinnen om blauwe kleur door te laten lpen tot onder 
-
+    @include atXSmall {
+        grid-template-columns: repeat(auto-fit, minmax(342px, 2fr));   
+    }
     @include atXlarge {
         grid-template-columns: repeat(3, 1fr);
+    }
+    &__vak {
+        & p {
+            display: none;
+            background-color: white;
+            border-radius: 0 0 1.3rem 1.3rem;
+            padding: 2rem;
+            height: auto;
+            @include atMedium {
+                display: block;
+                
+            }
+        }
     }
     &__engels {
         background-image: url("/assets/images/england-lo-re.jpg");
         @include vakken;
         @include hover;
+        @include atMedium {
+            border-radius: 1.3rem 1.3rem 0 0;
+        }
         @include atXlarge {
             background-image: url("/assets/images/england-hi-re.jpg");
         }
+        
     }
     &__nederlands {
         background-image: url("/assets/images/dutch-lo-re.jpg");
         @include vakken;
         @include hover;
+        @include atMedium {
+            border-radius: 1.3rem 1.3rem 0 0;
+        }
         @include atXlarge {
             background-image: url("/assets/images/dutch-hi-re.jpg");
         }

@@ -65,11 +65,19 @@
 
 .head__title {
   color: white;
-  font-size: 10rem;
+  font-size: 6rem;
   text-align: center;
-  font-weight: 400;
-  line-height: 10rem;
-  padding: 0;
+  font-weight: 300;
+  line-height: 6rem;
+  letter-spacing: 30px;
+  margin: 0;
+}
+
+@media (min-width: 372px) {
+  .head__title {
+    font-size: 10rem;
+    line-height: 10rem;
+  }
 }
 
 @media (min-width: 768px) {
@@ -110,18 +118,37 @@
   --textcolorhover: #bbb;
   display: -ms-grid;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(342px, 2fr));
+  grid-template-columns: repeat(auto-fit, minmax(280px, 2fr));
   grid-auto-rows: auto;
   grid-gap: 1rem;
   background-color: var(--mainbackround);
-  padding: 1rem;
-  height: 100%;
+  padding: 2rem 2.5rem;
+}
+
+@media (min-width: 372px) {
+  .gridFront {
+    grid-template-columns: repeat(auto-fit, minmax(342px, 2fr));
+  }
 }
 
 @media (min-width: 1200px) {
   .gridFront {
     -ms-grid-columns: (1fr)[3];
     grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.gridFront__vak p {
+  display: none;
+  background-color: white;
+  border-radius: 0 0 1.3rem 1.3rem;
+  padding: 2rem;
+  height: auto;
+}
+
+@media (min-width: 768px) {
+  .gridFront__vak p {
+    display: block;
   }
 }
 
@@ -140,6 +167,12 @@
 
 .gridFront__engels:hover {
   --textcolor: var(--textcolorhover);
+}
+
+@media (min-width: 768px) {
+  .gridFront__engels {
+    border-radius: 1.3rem 1.3rem 0 0;
+  }
 }
 
 @media (min-width: 1200px) {
@@ -163,6 +196,12 @@
 
 .gridFront__nederlands:hover {
   --textcolor: var(--textcolorhover);
+}
+
+@media (min-width: 768px) {
+  .gridFront__nederlands {
+    border-radius: 1.3rem 1.3rem 0 0;
+  }
 }
 
 @media (min-width: 1200px) {
@@ -285,3 +324,5 @@
     background-image: url("/assets/images/france-hi-re.jpg");
   }
 }
+
+/*# sourceMappingURL=style.css.map */
