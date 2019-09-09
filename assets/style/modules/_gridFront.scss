@@ -3,17 +3,34 @@
     --textcolor: white;
     --textcolorhover: #bbb;
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 2fr));
+    grid-template-columns: 1fr;
     grid-auto-rows: 1fr;
     grid-gap: 1rem;
-    background-color: var(--mainbackround);
     padding: 1rem;
-    @include atXSmall {
-        grid-template-columns: repeat(auto-fit, minmax(342px, 2fr));   
+    background-color: var(--mainbackround);
+    @include atMedium {
+        grid-template-columns: 1fr 1fr;
     }
-    @include atXlarge {
-        grid-template-columns: repeat(3, 1fr);
-        padding: 2rem 2.5rem;
+    @include atLarge {
+        grid-template-columns: 3fr 1fr;
+    }
+    &__left {
+        display: grid;
+        grid-auto-rows: 1fr;
+        grid-gap: 1rem;
+        padding: 1rem;
+        grid-template-columns: repeat(auto-fit, minmax(280px, 2fr));
+        @include atXSmall {
+            grid-template-columns: repeat(auto-fit, minmax(342px, 2fr));   
+        }
+        @include atLarge {
+            grid-template-columns: repeat(2, 1fr);
+            padding: 2rem 2.5rem;
+        }
+        @include atXlarge {
+            grid-template-columns: repeat(3, 1fr);
+            padding: 2rem 2.5rem;
+        }
     }
     &__vak {
         background-color: white;
@@ -24,7 +41,7 @@
             // border-radius: 0 0 1.3rem 1.3rem;
             padding: 2rem;
             height: auto;
-            @include atLarge {
+            @include atXlarge {
                 display: block;
                 
             }
@@ -34,10 +51,8 @@
         background-image: url("/assets/images/england-lo-re.jpg");
         @include vakken;
         @include hover;
-        @include atLarge {
-            border-radius: 1.3rem 1.3rem 0 0;
-        }
         @include atXlarge {
+            border-radius: 1.3rem 1.3rem 0 0;
             background-image: url("/assets/images/england-hi-re.jpg");
         }
         
@@ -46,10 +61,8 @@
         background-image: url("/assets/images/dutch-lo-re.jpg");
         @include vakken;
         @include hover;
-        @include atLarge {
-            border-radius: 1.3rem 1.3rem 0 0;
-        }
         @include atXlarge {
+            border-radius: 1.3rem 1.3rem 0 0;
             background-image: url("/assets/images/dutch-hi-re.jpg");
         }
     }
@@ -57,21 +70,26 @@
         background-image: url("/assets/images/math-lo-re.jpg");
         @include vakken;
         @include hover;
-        @include atLarge {
-            border-radius: 1.3rem 1.3rem 0 0;
-        }
         @include atXlarge {
+            border-radius: 1.3rem 1.3rem 0 0;
             background-image: url("/assets/images/math-hi-re.jpg");
+        }
+    }
+    &__natuurkunde {
+        background-image: url("/assets/images/natuurkunde-lo-re.jpg");
+        @include vakken;
+        @include hover;
+        @include atXlarge {
+            border-radius: 1.3rem 1.3rem 0 0;
+            background-image: url("/assets/images/natuurkunde-hi-re.jpg");
         }
     }
     &__biologie {
         background-image: url("/assets/images/biology-lo-re.jpg");
         @include vakken;
         @include hover;
-        @include atLarge {
-            border-radius: 1.3rem 1.3rem 0 0;
-        }
         @include atXlarge {
+            border-radius: 1.3rem 1.3rem 0 0;
             background-image: url("/assets/images/biology-hi-re.jpg");
         }
     }
@@ -79,10 +97,8 @@
         background-image: url("/assets/images/history-lo-re.jpg");
         @include vakken;
         @include hover;
-        @include atLarge {
-            border-radius: 1.3rem 1.3rem 0 0;
-        }
         @include atXlarge {
+            border-radius: 1.3rem 1.3rem 0 0;
             background-image: url("/assets/images/history-hi-re.jpg");
         }
     }
@@ -90,10 +106,8 @@
         background-image: url("/assets/images/geography-lo-re.jpg");
         @include vakken;
         @include hover;
-        @include atLarge {
-            border-radius: 1.3rem 1.3rem 0 0;
-        }
         @include atXlarge {
+            border-radius: 1.3rem 1.3rem 0 0;
             background-image: url("/assets/images/geography-hi-re.jpg");
         }
     }
@@ -101,11 +115,23 @@
         background-image: url("/assets/images/france-lo-re.jpg");
         @include vakken;
         @include hover;
-        @include atLarge {
-            border-radius: 1.3rem 1.3rem 0 0;
-        }
         @include atXlarge {
+            border-radius: 1.3rem 1.3rem 0 0;
             background-image: url("/assets/images/france-hi-re.jpg");
+        }
+    }
+    &__right {
+        display: block;
+        padding: 2rem;
+    }
+    &__link {
+        display: block;
+        color: white;
+        font-size: 2rem;
+
+        & > i {
+            color: #9e9e9e; // TODO kleur iconen nog aanpassen naar een goede kleur
+            width: 2.2rem;
         }
     }
 }

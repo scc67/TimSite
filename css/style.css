@@ -118,21 +118,53 @@
   --textcolorhover: #bbb;
   display: -ms-grid;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 2fr));
+  -ms-grid-columns: 1fr;
+  grid-template-columns: 1fr;
   grid-auto-rows: 1fr;
   grid-gap: 1rem;
-  background-color: var(--mainbackround);
   padding: 1rem;
+  background-color: var(--mainbackround);
+}
+
+@media (min-width: 768px) {
+  .gridFront {
+    -ms-grid-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (min-width: 992px) {
+  .gridFront {
+    -ms-grid-columns: 3fr 1fr;
+    grid-template-columns: 3fr 1fr;
+  }
+}
+
+.gridFront__left {
+  display: -ms-grid;
+  display: grid;
+  grid-auto-rows: 1fr;
+  grid-gap: 1rem;
+  padding: 1rem;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 2fr));
 }
 
 @media (min-width: 372px) {
-  .gridFront {
+  .gridFront__left {
     grid-template-columns: repeat(auto-fit, minmax(342px, 2fr));
   }
 }
 
+@media (min-width: 992px) {
+  .gridFront__left {
+    -ms-grid-columns: (1fr)[2];
+    grid-template-columns: repeat(2, 1fr);
+    padding: 2rem 2.5rem;
+  }
+}
+
 @media (min-width: 1200px) {
-  .gridFront {
+  .gridFront__left {
     -ms-grid-columns: (1fr)[3];
     grid-template-columns: repeat(3, 1fr);
     padding: 2rem 2.5rem;
@@ -151,7 +183,7 @@
   height: auto;
 }
 
-@media (min-width: 992px) {
+@media (min-width: 1200px) {
   .gridFront__vak p {
     display: block;
   }
@@ -174,14 +206,9 @@
   --textcolor: var(--textcolorhover);
 }
 
-@media (min-width: 992px) {
-  .gridFront__engels {
-    border-radius: 1.3rem 1.3rem 0 0;
-  }
-}
-
 @media (min-width: 1200px) {
   .gridFront__engels {
+    border-radius: 1.3rem 1.3rem 0 0;
     background-image: url("/assets/images/england-hi-re.jpg");
   }
 }
@@ -203,14 +230,9 @@
   --textcolor: var(--textcolorhover);
 }
 
-@media (min-width: 992px) {
-  .gridFront__nederlands {
-    border-radius: 1.3rem 1.3rem 0 0;
-  }
-}
-
 @media (min-width: 1200px) {
   .gridFront__nederlands {
+    border-radius: 1.3rem 1.3rem 0 0;
     background-image: url("/assets/images/dutch-hi-re.jpg");
   }
 }
@@ -232,15 +254,34 @@
   --textcolor: var(--textcolorhover);
 }
 
-@media (min-width: 992px) {
+@media (min-width: 1200px) {
   .gridFront__wiskunde {
     border-radius: 1.3rem 1.3rem 0 0;
+    background-image: url("/assets/images/math-hi-re.jpg");
   }
 }
 
+.gridFront__natuurkunde {
+  background-image: url("/assets/images/natuurkunde-lo-re.jpg");
+  --textcolorshadow: #000000;
+  background-color: #cccccc;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 1.3rem;
+  padding: 2rem;
+  color: var(--textcolor);
+  text-shadow: 2px 2px 4px var(--textcolorshadow);
+}
+
+.gridFront__natuurkunde:hover {
+  --textcolor: var(--textcolorhover);
+}
+
 @media (min-width: 1200px) {
-  .gridFront__wiskunde {
-    background-image: url("/assets/images/math-hi-re.jpg");
+  .gridFront__natuurkunde {
+    border-radius: 1.3rem 1.3rem 0 0;
+    background-image: url("/assets/images/natuurkunde-hi-re.jpg");
   }
 }
 
@@ -261,14 +302,9 @@
   --textcolor: var(--textcolorhover);
 }
 
-@media (min-width: 992px) {
-  .gridFront__biologie {
-    border-radius: 1.3rem 1.3rem 0 0;
-  }
-}
-
 @media (min-width: 1200px) {
   .gridFront__biologie {
+    border-radius: 1.3rem 1.3rem 0 0;
     background-image: url("/assets/images/biology-hi-re.jpg");
   }
 }
@@ -290,14 +326,9 @@
   --textcolor: var(--textcolorhover);
 }
 
-@media (min-width: 992px) {
-  .gridFront__geschiedenis {
-    border-radius: 1.3rem 1.3rem 0 0;
-  }
-}
-
 @media (min-width: 1200px) {
   .gridFront__geschiedenis {
+    border-radius: 1.3rem 1.3rem 0 0;
     background-image: url("/assets/images/history-hi-re.jpg");
   }
 }
@@ -319,14 +350,9 @@
   --textcolor: var(--textcolorhover);
 }
 
-@media (min-width: 992px) {
-  .gridFront__aarderijkskunde {
-    border-radius: 1.3rem 1.3rem 0 0;
-  }
-}
-
 @media (min-width: 1200px) {
   .gridFront__aarderijkskunde {
+    border-radius: 1.3rem 1.3rem 0 0;
     background-image: url("/assets/images/geography-hi-re.jpg");
   }
 }
@@ -348,16 +374,27 @@
   --textcolor: var(--textcolorhover);
 }
 
-@media (min-width: 992px) {
+@media (min-width: 1200px) {
   .gridFront__frans {
     border-radius: 1.3rem 1.3rem 0 0;
+    background-image: url("/assets/images/france-hi-re.jpg");
   }
 }
 
-@media (min-width: 1200px) {
-  .gridFront__frans {
-    background-image: url("/assets/images/france-hi-re.jpg");
-  }
+.gridFront__right {
+  display: block;
+  padding: 2rem;
+}
+
+.gridFront__link {
+  display: block;
+  color: white;
+  font-size: 2rem;
+}
+
+.gridFront__link > i {
+  color: #9e9e9e;
+  width: 2.2rem;
 }
 
 /*# sourceMappingURL=style.css.map */
