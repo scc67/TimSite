@@ -5,26 +5,33 @@
     background-size: cover;
     background-color: #464646;
     background-clip: text;
+
     &--imgFront {
-        background-image: url(/assets/images/building.jpg);
+        background-image: url(/timsite/assets/images/building.jpg);
     }
+
     &--txtFront {
         color: transparent;
         font-size: 10rem;
         text-align: center;
         font-weight: 600;
+
         @include atXSmall {
             font-size: 12rem;
         }
+
         @include atSmall {
             font-size: 20rem;
         }
+
         @include atMedium {
             font-size: 25rem;
         }
+
         @include atLarge {
             font-size: 30rem;
         }
+
         @include atXlarge {
             font-size: 35rem;
         }

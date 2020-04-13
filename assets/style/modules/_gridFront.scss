@@ -58,91 +58,91 @@
     }
 
     &__engels {
-        background-image: url("/Webdevelopment/TimSite/assets/images/england-lo-re.jpg");
+        background-image: url("/timsite/assets/images/england-lo-re.jpg");
         @include vakken;
         @include hover;
 
         @include atXlarge {
             border-radius: 1.3rem 1.3rem 0 0;
-            background-image: url("/Webdevelopment/TimSite/assets/images/england-hi-re.jpg");
+            background-image: url("/timsite/assets/images/england-hi-re.jpg");
         }
 
     }
 
     &__nederlands {
-        background-image: url("/assets/images/dutch-lo-re.jpg");
+        background-image: url("/timsite/assets/images/dutch-lo-re.jpg");
         @include vakken;
         @include hover;
 
         @include atXlarge {
             border-radius: 1.3rem 1.3rem 0 0;
-            background-image: url("/assets/images/dutch-hi-re.jpg");
+            background-image: url("/timsite/assets/images/dutch-hi-re.jpg");
         }
     }
 
     &__wiskunde {
-        background-image: url("/assets/images/math-lo-re.jpg");
+        background-image: url("/timsite/assets/images/math-lo-re.jpg");
         @include vakken;
         @include hover;
 
         @include atXlarge {
             border-radius: 1.3rem 1.3rem 0 0;
-            background-image: url("/assets/images/math-hi-re.jpg");
+            background-image: url("/timsite/assets/images/math-hi-re.jpg");
         }
     }
 
     &__natuurkunde {
-        background-image: url("/assets/images/natuurkunde-lo-re.jpg");
+        background-image: url("/timsite/assets/images/natuurkunde-lo-re.jpg");
         @include vakken;
         @include hover;
 
         @include atXlarge {
             border-radius: 1.3rem 1.3rem 0 0;
-            background-image: url("/assets/images/natuurkunde-hi-re.jpg");
+            background-image: url("/timsite/assets/images/natuurkunde-hi-re.jpg");
         }
     }
 
     &__biologie {
-        background-image: url("/assets/images/biology-lo-re.jpg");
+        background-image: url("/timsite/assets/images/biology-lo-re.jpg");
         @include vakken;
         @include hover;
 
         @include atXlarge {
             border-radius: 1.3rem 1.3rem 0 0;
-            background-image: url("/assets/images/biology-hi-re.jpg");
+            background-image: url("/timsite/assets/images/biology-hi-re.jpg");
         }
     }
 
     &__geschiedenis {
-        background-image: url("/assets/images/history-lo-re.jpg");
+        background-image: url("/timsite/assets/images/history-lo-re.jpg");
         @include vakken;
         @include hover;
 
         @include atXlarge {
             border-radius: 1.3rem 1.3rem 0 0;
-            background-image: url("/assets/images/history-hi-re.jpg");
+            background-image: url("/timsite/assets/images/history-hi-re.jpg");
         }
     }
 
     &__aarderijkskunde {
-        background-image: url("/assets/images/geography-lo-re.jpg");
+        background-image: url("/timsite/assets/images/geography-lo-re.jpg");
         @include vakken;
         @include hover;
 
         @include atXlarge {
             border-radius: 1.3rem 1.3rem 0 0;
-            background-image: url("/assets/images/geography-hi-re.jpg");
+            background-image: url("/timsite/assets/images/geography-hi-re.jpg");
         }
     }
 
     &__frans {
-        background-image: url("/assets/images/france-lo-re.jpg");
+        background-image: url("/timsite/assets/images/france-lo-re.jpg");
         @include vakken;
         @include hover;
 
         @include atXlarge {
             border-radius: 1.3rem 1.3rem 0 0;
-            background-image: url("/assets/images/france-hi-re.jpg");
+            background-image: url("/timsite/assets/images/france-hi-re.jpg");
         }
     }
 
