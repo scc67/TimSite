@@ -1,1 +1,1 @@
-$('.navbar-js').load('/timsite/assets/common/navbar.html');
+$('.navbar-js').load('/assets/common/navbar.html');
