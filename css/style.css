@@ -19,7 +19,7 @@
 }
 
 .bgImage--imgFront {
-  background-image: url(/assets/images/building.jpg);
+  background-image: url(/timsite/assets/images/building.jpg);
 }
 
 .bgImage--txtFront {
@@ -190,7 +190,7 @@
 }
 
 .gridFront__engels {
-  background-image: url("/assets/images/england-lo-re.jpg");
+  background-image: url("/timsite/assets/images/england-lo-re.jpg");
   --textcolorshadow: #000000;
   background-color: #cccccc;
   background-position: center;
@@ -209,12 +209,12 @@
 @media (min-width: 1200px) {
   .gridFront__engels {
     border-radius: 1.3rem 1.3rem 0 0;
-    background-image: url("/assets/images/england-hi-re.jpg");
+    background-image: url("/timsite/assets/images/england-hi-re.jpg");
   }
 }
 
 .gridFront__nederlands {
-  background-image: url("/assets/images/dutch-lo-re.jpg");
+  background-image: url("/timsite/assets/images/dutch-lo-re.jpg");
   --textcolorshadow: #000000;
   background-color: #cccccc;
   background-position: center;
@@ -233,12 +233,12 @@
 @media (min-width: 1200px) {
   .gridFront__nederlands {
     border-radius: 1.3rem 1.3rem 0 0;
-    background-image: url("/assets/images/dutch-hi-re.jpg");
+    background-image: url("/timsite/assets/images/dutch-hi-re.jpg");
   }
 }
 
 .gridFront__wiskunde {
-  background-image: url("/assets/images/math-lo-re.jpg");
+  background-image: url("/timsite/assets/images/math-lo-re.jpg");
   --textcolorshadow: #000000;
   background-color: #cccccc;
   background-position: center;
@@ -257,12 +257,12 @@
 @media (min-width: 1200px) {
   .gridFront__wiskunde {
     border-radius: 1.3rem 1.3rem 0 0;
-    background-image: url("/assets/images/math-hi-re.jpg");
+    background-image: url("/timsite/assets/images/math-hi-re.jpg");
   }
 }
 
 .gridFront__natuurkunde {
-  background-image: url("/assets/images/natuurkunde-lo-re.jpg");
+  background-image: url("/timsite/assets/images/natuurkunde-lo-re.jpg");
   --textcolorshadow: #000000;
   background-color: #cccccc;
   background-position: center;
@@ -281,12 +281,12 @@
 @media (min-width: 1200px) {
   .gridFront__natuurkunde {
     border-radius: 1.3rem 1.3rem 0 0;
-    background-image: url("/assets/images/natuurkunde-hi-re.jpg");
+    background-image: url("/timsite/assets/images/natuurkunde-hi-re.jpg");
   }
 }
 
 .gridFront__biologie {
-  background-image: url("/assets/images/biology-lo-re.jpg");
+  background-image: url("/timsite/assets/images/biology-lo-re.jpg");
   --textcolorshadow: #000000;
   background-color: #cccccc;
   background-position: center;
@@ -305,12 +305,12 @@
 @media (min-width: 1200px) {
   .gridFront__biologie {
     border-radius: 1.3rem 1.3rem 0 0;
-    background-image: url("/assets/images/biology-hi-re.jpg");
+    background-image: url("/timsite/assets/images/biology-hi-re.jpg");
   }
 }
 
 .gridFront__geschiedenis {
-  background-image: url("/assets/images/history-lo-re.jpg");
+  background-image: url("/timsite/assets/images/history-lo-re.jpg");
   --textcolorshadow: #000000;
   background-color: #cccccc;
   background-position: center;
@@ -329,12 +329,12 @@
 @media (min-width: 1200px) {
   .gridFront__geschiedenis {
     border-radius: 1.3rem 1.3rem 0 0;
-    background-image: url("/assets/images/history-hi-re.jpg");
+    background-image: url("/timsite/assets/images/history-hi-re.jpg");
   }
 }
 
 .gridFront__aarderijkskunde {
-  background-image: url("/assets/images/geography-lo-re.jpg");
+  background-image: url("/timsite/assets/images/geography-lo-re.jpg");
   --textcolorshadow: #000000;
   background-color: #cccccc;
   background-position: center;
@@ -353,12 +353,12 @@
 @media (min-width: 1200px) {
   .gridFront__aarderijkskunde {
     border-radius: 1.3rem 1.3rem 0 0;
-    background-image: url("/assets/images/geography-hi-re.jpg");
+    background-image: url("/timsite/assets/images/geography-hi-re.jpg");
   }
 }
 
 .gridFront__frans {
-  background-image: url("/assets/images/france-lo-re.jpg");
+  background-image: url("/timsite/assets/images/france-lo-re.jpg");
   --textcolorshadow: #000000;
   background-color: #cccccc;
   background-position: center;
@@ -377,7 +377,7 @@
 @media (min-width: 1200px) {
   .gridFront__frans {
     border-radius: 1.3rem 1.3rem 0 0;
-    background-image: url("/assets/images/france-hi-re.jpg");
+    background-image: url("/timsite/assets/images/france-hi-re.jpg");
   }
 }
 
