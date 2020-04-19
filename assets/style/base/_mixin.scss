@@ -55,5 +55,6 @@
 @mixin hover {
     &:hover {
         --textcolor: var(--textcolorhover);
+        text-decoration: none;
     }
 }
