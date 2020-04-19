@@ -59,10 +59,13 @@
         }
     }
 
+    &__link {
+        @include hover;
+    }
+
     &__engels {
         background-image: url("/assets/images/england-lo-re.jpg");
         @include vakken;
-        @include hover;
 
         @include atXlarge {
             border-radius: 1.3rem 1.3rem 0 0;
@@ -74,7 +77,6 @@
     &__nederlands {
         background-image: url("/assets/images/dutch-lo-re.jpg");
         @include vakken;
-        @include hover;
 
         @include atXlarge {
             border-radius: 1.3rem 1.3rem 0 0;
@@ -85,7 +87,6 @@
     &__wiskunde {
         background-image: url("/assets/images/math-lo-re.jpg");
         @include vakken;
-        @include hover;
 
         @include atXlarge {
             border-radius: 1.3rem 1.3rem 0 0;
@@ -96,7 +97,6 @@
     &__natuurkunde {
         background-image: url("/assets/images/natuurkunde-lo-re.jpg");
         @include vakken;
-        @include hover;
 
         @include atXlarge {
             border-radius: 1.3rem 1.3rem 0 0;
@@ -107,7 +107,6 @@
     &__biologie {
         background-image: url("/assets/images/biology-lo-re.jpg");
         @include vakken;
-        @include hover;
 
         @include atXlarge {
             border-radius: 1.3rem 1.3rem 0 0;
@@ -118,7 +117,6 @@
     &__geschiedenis {
         background-image: url("/assets/images/history-lo-re.jpg");
         @include vakken;
-        @include hover;
 
         @include atXlarge {
             border-radius: 1.3rem 1.3rem 0 0;
@@ -129,7 +127,6 @@
     &__aarderijkskunde {
         background-image: url("/assets/images/geography-lo-re.jpg");
         @include vakken;
-        @include hover;
 
         @include atXlarge {
             border-radius: 1.3rem 1.3rem 0 0;
@@ -140,7 +137,6 @@
     &__frans {
         background-image: url("/assets/images/france-lo-re.jpg");
         @include vakken;
-        @include hover;
 
         @include atXlarge {
             border-radius: 1.3rem 1.3rem 0 0;

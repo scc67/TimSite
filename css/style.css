@@ -194,6 +194,11 @@ body {
   }
 }
 
+.gridFront__link:hover {
+  --textcolor: var(--textcolorhover);
+  text-decoration: none;
+}
+
 .gridFront__engels {
   background-image: url("/assets/images/england-lo-re.jpg");
   --textcolorshadow: #000000;
@@ -205,10 +210,6 @@ body {
   padding: 2rem;
   color: var(--textcolor);
   text-shadow: 2px 2px 4px var(--textcolorshadow);
-}
-
-.gridFront__engels:hover {
-  --textcolor: var(--textcolorhover);
 }
 
 @media (min-width: 1200px) {
@@ -231,10 +232,6 @@ body {
   text-shadow: 2px 2px 4px var(--textcolorshadow);
 }
 
-.gridFront__nederlands:hover {
-  --textcolor: var(--textcolorhover);
-}
-
 @media (min-width: 1200px) {
   .gridFront__nederlands {
     border-radius: 1.3rem 1.3rem 0 0;
@@ -253,10 +250,6 @@ body {
   padding: 2rem;
   color: var(--textcolor);
   text-shadow: 2px 2px 4px var(--textcolorshadow);
-}
-
-.gridFront__wiskunde:hover {
-  --textcolor: var(--textcolorhover);
 }
 
 @media (min-width: 1200px) {
@@ -279,10 +272,6 @@ body {
   text-shadow: 2px 2px 4px var(--textcolorshadow);
 }
 
-.gridFront__natuurkunde:hover {
-  --textcolor: var(--textcolorhover);
-}
-
 @media (min-width: 1200px) {
   .gridFront__natuurkunde {
     border-radius: 1.3rem 1.3rem 0 0;
@@ -301,10 +290,6 @@ body {
   padding: 2rem;
   color: var(--textcolor);
   text-shadow: 2px 2px 4px var(--textcolorshadow);
-}
-
-.gridFront__biologie:hover {
-  --textcolor: var(--textcolorhover);
 }
 
 @media (min-width: 1200px) {
@@ -327,10 +312,6 @@ body {
   text-shadow: 2px 2px 4px var(--textcolorshadow);
 }
 
-.gridFront__geschiedenis:hover {
-  --textcolor: var(--textcolorhover);
-}
-
 @media (min-width: 1200px) {
   .gridFront__geschiedenis {
     border-radius: 1.3rem 1.3rem 0 0;
@@ -351,10 +332,6 @@ body {
   text-shadow: 2px 2px 4px var(--textcolorshadow);
 }
 
-.gridFront__aarderijkskunde:hover {
-  --textcolor: var(--textcolorhover);
-}
-
 @media (min-width: 1200px) {
   .gridFront__aarderijkskunde {
     border-radius: 1.3rem 1.3rem 0 0;
@@ -373,10 +350,6 @@ body {
   padding: 2rem;
   color: var(--textcolor);
   text-shadow: 2px 2px 4px var(--textcolorshadow);
-}
-
-.gridFront__frans:hover {
-  --textcolor: var(--textcolorhover);
 }
 
 @media (min-width: 1200px) {
