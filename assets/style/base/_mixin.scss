@@ -1,18 +1,33 @@
 @mixin atXSmall {
-    @media (min-width: 372px) { @content; }
+    @media (min-width: 372px) {
+        @content;
+    }
 }
+
 @mixin atSmall {
-    @media (min-width: 576px) { @content; }
-} 
+    @media (min-width: 576px) {
+        @content;
+    }
+}
+
 @mixin atMedium {
-    @media (min-width: 768px) { @content; }
+    @media (min-width: 768px) {
+        @content;
+    }
 }
+
 @mixin atLarge {
-    @media (min-width: 992px) { @content; }
+    @media (min-width: 992px) {
+        @content;
+    }
 }
+
 @mixin atXlarge {
-    @media (min-width: 1200px) { @content; }
+    @media (min-width: 1200px) {
+        @content;
+    }
 }
+
 @mixin vakken-head {
     --textcolorshadow: #000000;
     background-color: #cccccc;
@@ -24,6 +39,7 @@
     color: var(--textcolor);
     text-shadow: 2px 2px 4px var(--textcolorshadow);
 }
+
 @mixin vakken {
     --textcolorshadow: #000000;
     background-color: #cccccc;
@@ -35,6 +51,7 @@
     color: var(--textcolor);
     text-shadow: 2px 2px 4px var(--textcolorshadow);
 }
+
 @mixin hover {
     &:hover {
         --textcolor: var(--textcolorhover);

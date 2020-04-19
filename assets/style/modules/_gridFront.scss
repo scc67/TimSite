@@ -5,7 +5,7 @@
     display: grid;
     grid-template-columns: 1fr;
     grid-auto-rows: 1fr;
-    grid-gap: 1rem;
+    grid-gap: 2rem;
     padding: 1rem;
     background-color: var(--mainbackround);
 
@@ -14,6 +14,10 @@
     }
 
     @include atLarge {
+        grid-template-columns: 2.4fr 1fr;
+    }
+
+    @include atXlarge {
         grid-template-columns: 3fr 1fr;
     }
 
@@ -21,7 +25,6 @@
         display: grid;
         grid-auto-rows: 1fr;
         grid-gap: 1rem;
-        padding: 1rem;
         grid-template-columns: repeat(auto-fit, minmax(280px, 2fr));
 
         @include atXSmall {
@@ -30,13 +33,12 @@
 
         @include atLarge {
             grid-template-columns: repeat(2, 1fr);
-            padding: 2rem 2.5rem;
         }
 
-        @include atXlarge {
-            grid-template-columns: repeat(3, 1fr);
-            padding: 2rem 2.5rem;
-        }
+        // @include atXlarge {
+        //     grid-template-columns: repeat(3, 1fr);
+        //     padding: 2rem 2.5rem;
+        // }
     }
 
     &__vak {
@@ -47,7 +49,7 @@
             display: none;
             background-color: white;
             // border-radius: 0 0 1.3rem 1.3rem;
-            padding: 2rem;
+            margin: 2rem;
             height: auto;
 
             @include atXlarge {
@@ -148,15 +150,6 @@
 
     &__right {
         display: block;
-        padding: 2rem 1rem;
-
-        @include atMedium {
-            padding: 2rem;
-        }
-
-        @include atLarge {
-            padding: 2rem 0rem;
-        }
     }
 
     &__link {

@@ -1,5 +1,6 @@
 .head {
     background-color: #2196F3;
+
     &__title {
         color: white;
         font-size: 6rem;
@@ -8,19 +9,23 @@
         line-height: 6rem;
         letter-spacing: 30px;
         margin: 0;
+
         @include atXSmall {
             font-size: 10rem;
             line-height: 10rem;
         }
+
         @include atMedium {
             font-size: 12rem;
             line-height: 12rem;
         }
+
         @include atXlarge {
             font-size: 15rem;
             line-height: 15rem;
         }
     }
+
     &__subTitle {
         color: white;
         font-size: 1.5rem;
@@ -29,6 +34,7 @@
         padding-bottom: 1.5rem;
         line-height: 1.5rem;
         margin-bottom: 0;
+
         @include atMedium {
             font-size: 2rem;
             line-height: 2rem;
