@@ -6,7 +6,7 @@
     grid-template-columns: 1fr;
     grid-auto-rows: 1fr;
     grid-gap: 2rem;
-    padding: 1rem;
+    padding: 4rem 1rem;
     background-color: var(--mainbackround);
 
     @include atMedium {
@@ -15,6 +15,7 @@
 
     @include atLarge {
         grid-template-columns: 2.4fr 1fr;
+        padding: 6rem 1rem;
     }
 
     @include atXlarge {
@@ -146,6 +147,13 @@
 
     &__right {
         display: block;
+        position: sticky;
+        top: 4rem;
+        height: 20vh;
+
+        @include atLarge {
+            top: 6rem;
+        }
     }
 
     &__link {
