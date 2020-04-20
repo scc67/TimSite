@@ -137,6 +137,7 @@ body {
   grid-gap: 2rem;
   padding: 4rem 1rem;
   background-color: var(--mainbackround);
+  height: 100vh;
 }
 
 @media (min-width: 768px) {
@@ -186,6 +187,9 @@ body {
 .gridFront__vak {
   background-color: var(--backgroundcontent);
   border-radius: 1.3rem;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
 }
 
 .gridFront__link:hover {

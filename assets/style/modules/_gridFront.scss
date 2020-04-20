@@ -9,6 +9,7 @@
     grid-gap: 2rem;
     padding: 4rem 1rem;
     background-color: var(--mainbackround);
+    height: 100vh;
 
     @include atMedium {
         grid-template-columns: 1fr 1fr;
@@ -45,6 +46,7 @@
     &__vak {
         background-color: var(--backgroundcontent);
         border-radius: 1.3rem;
+        height: fit-content;
     }
 
     &__link {
