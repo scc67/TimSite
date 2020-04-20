@@ -25,7 +25,6 @@
 
     &__left {
         display: grid;
-        grid-auto-rows: auto;
         grid-gap: 1rem;
         grid-template-columns: repeat(auto-fit, minmax(280px, 2fr));
 
@@ -35,7 +34,6 @@
 
         @include atLarge {
             grid-template-columns: repeat(2, 1fr);
-            grid-auto-rows: auto;
         }
 
         // @include atXlarge {

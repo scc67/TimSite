@@ -28,18 +28,6 @@
     }
 }
 
-@mixin vakken-head {
-    --textcolorshadow: #000000;
-    background-color: #cccccc;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    border-radius: 1.3rem;
-    padding: 2rem;
-    color: var(--textcolor);
-    text-shadow: 2px 2px 4px var(--textcolorshadow);
-}
-
 @mixin vakken {
     --textcolorshadow: #000000;
     background-color: #cccccc;
