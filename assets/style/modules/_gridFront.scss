@@ -1,5 +1,6 @@
 .gridFront {
     --mainbackround: rgba(33, 149, 243, 0.657);
+    --backgroundcontent: #2196F3;
     --textcolor: white;
     --textcolorhover: #bbb;
     display: grid;
@@ -24,7 +25,6 @@
 
     &__left {
         display: grid;
-        grid-auto-rows: 1fr;
         grid-gap: 1rem;
         grid-template-columns: repeat(auto-fit, minmax(280px, 2fr));
 
@@ -43,25 +43,24 @@
     }
 
     &__vak {
-        background-color: white;
+        background-color: var(--backgroundcontent);
         border-radius: 1.3rem;
-
-        & p {
-            display: none;
-            background-color: white;
-            // border-radius: 0 0 1.3rem 1.3rem;
-            margin: 2rem;
-            height: auto;
-
-            @include atXlarge {
-                display: block;
-
-            }
-        }
     }
 
     &__link {
         @include hover;
+    }
+
+    &__content {
+        display: none;
+        border-radius: 0 0 1.3rem 1.3rem;
+        padding: 2rem;
+        grid-auto-rows: auto;
+
+        @include atXlarge {
+            display: block;
+
+        }
     }
 
     &__engels {

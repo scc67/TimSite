@@ -8,6 +8,7 @@ body {
 .navbar {
   position: fixed;
   width: 100%;
+  z-index: 1;
 }
 
 .navbar--no-padding-until-large {
@@ -125,6 +126,7 @@ body {
 
 .gridFront {
   --mainbackround: rgba(33, 149, 243, 0.657);
+  --backgroundcontent: #2196F3;
   --textcolor: white;
   --textcolorhover: #bbb;
   display: -ms-grid;
@@ -162,7 +164,6 @@ body {
 .gridFront__left {
   display: -ms-grid;
   display: grid;
-  grid-auto-rows: 1fr;
   grid-gap: 1rem;
   -ms-grid-columns: (minmax(280px, 2fr))[auto-fit];
       grid-template-columns: repeat(auto-fit, minmax(280px, 2fr));
@@ -183,26 +184,26 @@ body {
 }
 
 .gridFront__vak {
-  background-color: white;
+  background-color: var(--backgroundcontent);
   border-radius: 1.3rem;
-}
-
-.gridFront__vak p {
-  display: none;
-  background-color: white;
-  margin: 2rem;
-  height: auto;
-}
-
-@media (min-width: 1200px) {
-  .gridFront__vak p {
-    display: block;
-  }
 }
 
 .gridFront__link:hover {
   --textcolor: var(--textcolorhover);
   text-decoration: none;
+}
+
+.gridFront__content {
+  display: none;
+  border-radius: 0 0 1.3rem 1.3rem;
+  padding: 2rem;
+  grid-auto-rows: auto;
+}
+
+@media (min-width: 1200px) {
+  .gridFront__content {
+    display: block;
+  }
 }
 
 .gridFront__engels {
@@ -213,7 +214,7 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   border-radius: 1.3rem;
-  padding: 2rem;
+  padding: 1rem;
   color: var(--textcolor);
   text-shadow: 2px 2px 4px var(--textcolorshadow);
 }
@@ -233,7 +234,7 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   border-radius: 1.3rem;
-  padding: 2rem;
+  padding: 1rem;
   color: var(--textcolor);
   text-shadow: 2px 2px 4px var(--textcolorshadow);
 }
@@ -253,7 +254,7 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   border-radius: 1.3rem;
-  padding: 2rem;
+  padding: 1rem;
   color: var(--textcolor);
   text-shadow: 2px 2px 4px var(--textcolorshadow);
 }
@@ -273,7 +274,7 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   border-radius: 1.3rem;
-  padding: 2rem;
+  padding: 1rem;
   color: var(--textcolor);
   text-shadow: 2px 2px 4px var(--textcolorshadow);
 }
@@ -293,7 +294,7 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   border-radius: 1.3rem;
-  padding: 2rem;
+  padding: 1rem;
   color: var(--textcolor);
   text-shadow: 2px 2px 4px var(--textcolorshadow);
 }
@@ -313,7 +314,7 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   border-radius: 1.3rem;
-  padding: 2rem;
+  padding: 1rem;
   color: var(--textcolor);
   text-shadow: 2px 2px 4px var(--textcolorshadow);
 }
@@ -333,7 +334,7 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   border-radius: 1.3rem;
-  padding: 2rem;
+  padding: 1rem;
   color: var(--textcolor);
   text-shadow: 2px 2px 4px var(--textcolorshadow);
 }
@@ -353,7 +354,7 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   border-radius: 1.3rem;
-  padding: 2rem;
+  padding: 1rem;
   color: var(--textcolor);
   text-shadow: 2px 2px 4px var(--textcolorshadow);
 }
