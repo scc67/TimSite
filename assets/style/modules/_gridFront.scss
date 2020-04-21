@@ -46,7 +46,7 @@
     &__vak {
         background-color: var(--backgroundcontent);
         border-radius: 1.3rem;
-        height: fit-content;
+        height: fit-content; //TODO Zorgend dat grid vakken naast elkaar qua achtergrond kleur even groot is, onafhankelijk van inhoud
     }
 
     &__link {
@@ -65,85 +65,27 @@
         }
     }
 
-    &__engels {
-        background-image: url("/assets/images/england-lo-re.jpg");
-        @include vakken;
+    $vakken: "engels",
+    "nederlands",
+    "wiskunde",
+    "natuurkunde",
+    "biologie",
+    "geschiedenis",
+    "aarderijkskunde",
+    "bv";
 
-        @include atXlarge {
-            border-radius: 1.3rem 1.3rem 0 0;
-            background-image: url("/assets/images/england-hi-re.jpg");
+    @each $vak in $vakken {
+        &__#{$vak} {
+            background-image: url("/assets/images/"+ $vak + "-lo-re.jpg");
+            @include vakken;
+
+            @include atXlarge {
+                border-radius: 1.3rem 1.3rem 0 0;
+                background-image: url("/assets/images/"+ $vak + "-hi-re.jpg");
+            }
+
         }
 
-    }
-
-    &__nederlands {
-        background-image: url("/assets/images/dutch-lo-re.jpg");
-        @include vakken;
-
-        @include atXlarge {
-            border-radius: 1.3rem 1.3rem 0 0;
-            background-image: url("/assets/images/dutch-hi-re.jpg");
-        }
-    }
-
-    &__wiskunde {
-        background-image: url("/assets/images/math-lo-re.jpg");
-        @include vakken;
-
-        @include atXlarge {
-            border-radius: 1.3rem 1.3rem 0 0;
-            background-image: url("/assets/images/math-hi-re.jpg");
-        }
-    }
-
-    &__natuurkunde {
-        background-image: url("/assets/images/natuurkunde-lo-re.jpg");
-        @include vakken;
-
-        @include atXlarge {
-            border-radius: 1.3rem 1.3rem 0 0;
-            background-image: url("/assets/images/natuurkunde-hi-re.jpg");
-        }
-    }
-
-    &__biologie {
-        background-image: url("/assets/images/biology-lo-re.jpg");
-        @include vakken;
-
-        @include atXlarge {
-            border-radius: 1.3rem 1.3rem 0 0;
-            background-image: url("/assets/images/biology-hi-re.jpg");
-        }
-    }
-
-    &__geschiedenis {
-        background-image: url("/assets/images/history-lo-re.jpg");
-        @include vakken;
-
-        @include atXlarge {
-            border-radius: 1.3rem 1.3rem 0 0;
-            background-image: url("/assets/images/history-hi-re.jpg");
-        }
-    }
-
-    &__aarderijkskunde {
-        background-image: url("/assets/images/geography-lo-re.jpg");
-        @include vakken;
-
-        @include atXlarge {
-            border-radius: 1.3rem 1.3rem 0 0;
-            background-image: url("/assets/images/geography-hi-re.jpg");
-        }
-    }
-
-    &__frans {
-        background-image: url("/assets/images/france-lo-re.jpg");
-        @include vakken;
-
-        @include atXlarge {
-            border-radius: 1.3rem 1.3rem 0 0;
-            background-image: url("/assets/images/france-hi-re.jpg");
-        }
     }
 
     &__right {
