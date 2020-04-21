@@ -211,7 +211,7 @@ body {
 }
 
 .gridFront__engels {
-  background-image: url("/assets/images/england-lo-re.jpg");
+  background-image: url("/assets/images/engels-lo-re.jpg");
   --textcolorshadow: #000000;
   background-color: #cccccc;
   background-position: center;
@@ -226,12 +226,12 @@ body {
 @media (min-width: 1200px) {
   .gridFront__engels {
     border-radius: 1.3rem 1.3rem 0 0;
-    background-image: url("/assets/images/england-hi-re.jpg");
+    background-image: url("/assets/images/engels-hi-re.jpg");
   }
 }
 
 .gridFront__nederlands {
-  background-image: url("/assets/images/dutch-lo-re.jpg");
+  background-image: url("/assets/images/nederlands-lo-re.jpg");
   --textcolorshadow: #000000;
   background-color: #cccccc;
   background-position: center;
@@ -246,12 +246,12 @@ body {
 @media (min-width: 1200px) {
   .gridFront__nederlands {
     border-radius: 1.3rem 1.3rem 0 0;
-    background-image: url("/assets/images/dutch-hi-re.jpg");
+    background-image: url("/assets/images/nederlands-hi-re.jpg");
   }
 }
 
 .gridFront__wiskunde {
-  background-image: url("/assets/images/math-lo-re.jpg");
+  background-image: url("/assets/images/wiskunde-lo-re.jpg");
   --textcolorshadow: #000000;
   background-color: #cccccc;
   background-position: center;
@@ -266,7 +266,7 @@ body {
 @media (min-width: 1200px) {
   .gridFront__wiskunde {
     border-radius: 1.3rem 1.3rem 0 0;
-    background-image: url("/assets/images/math-hi-re.jpg");
+    background-image: url("/assets/images/wiskunde-hi-re.jpg");
   }
 }
 
@@ -291,7 +291,7 @@ body {
 }
 
 .gridFront__biologie {
-  background-image: url("/assets/images/biology-lo-re.jpg");
+  background-image: url("/assets/images/biologie-lo-re.jpg");
   --textcolorshadow: #000000;
   background-color: #cccccc;
   background-position: center;
@@ -306,12 +306,12 @@ body {
 @media (min-width: 1200px) {
   .gridFront__biologie {
     border-radius: 1.3rem 1.3rem 0 0;
-    background-image: url("/assets/images/biology-hi-re.jpg");
+    background-image: url("/assets/images/biologie-hi-re.jpg");
   }
 }
 
 .gridFront__geschiedenis {
-  background-image: url("/assets/images/history-lo-re.jpg");
+  background-image: url("/assets/images/geschiedenis-lo-re.jpg");
   --textcolorshadow: #000000;
   background-color: #cccccc;
   background-position: center;
@@ -326,12 +326,12 @@ body {
 @media (min-width: 1200px) {
   .gridFront__geschiedenis {
     border-radius: 1.3rem 1.3rem 0 0;
-    background-image: url("/assets/images/history-hi-re.jpg");
+    background-image: url("/assets/images/geschiedenis-hi-re.jpg");
   }
 }
 
 .gridFront__aarderijkskunde {
-  background-image: url("/assets/images/geography-lo-re.jpg");
+  background-image: url("/assets/images/aarderijkskunde-lo-re.jpg");
   --textcolorshadow: #000000;
   background-color: #cccccc;
   background-position: center;
@@ -346,12 +346,12 @@ body {
 @media (min-width: 1200px) {
   .gridFront__aarderijkskunde {
     border-radius: 1.3rem 1.3rem 0 0;
-    background-image: url("/assets/images/geography-hi-re.jpg");
+    background-image: url("/assets/images/aarderijkskunde-hi-re.jpg");
   }
 }
 
-.gridFront__frans {
-  background-image: url("/assets/images/france-lo-re.jpg");
+.gridFront__bv {
+  background-image: url("/assets/images/bv-lo-re.jpg");
   --textcolorshadow: #000000;
   background-color: #cccccc;
   background-position: center;
@@ -364,9 +364,9 @@ body {
 }
 
 @media (min-width: 1200px) {
-  .gridFront__frans {
+  .gridFront__bv {
     border-radius: 1.3rem 1.3rem 0 0;
-    background-image: url("/assets/images/france-hi-re.jpg");
+    background-image: url("/assets/images/bv-hi-re.jpg");
   }
 }
 
