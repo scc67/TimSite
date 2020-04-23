@@ -204,6 +204,10 @@ body {
   grid-auto-rows: auto;
 }
 
+.gridFront__content--click {
+  display: block;
+}
+
 @media (min-width: 1200px) {
   .gridFront__content {
     display: block;
@@ -221,6 +225,10 @@ body {
   padding: 1rem;
   color: var(--textcolor);
   text-shadow: 2px 2px 4px var(--textcolorshadow);
+}
+
+.gridFront__engels--click {
+  border-radius: 1.3rem 1.3rem 0 0;
 }
 
 @media (min-width: 1200px) {
@@ -243,6 +251,10 @@ body {
   text-shadow: 2px 2px 4px var(--textcolorshadow);
 }
 
+.gridFront__nederlands--click {
+  border-radius: 1.3rem 1.3rem 0 0;
+}
+
 @media (min-width: 1200px) {
   .gridFront__nederlands {
     border-radius: 1.3rem 1.3rem 0 0;
@@ -261,6 +273,10 @@ body {
   padding: 1rem;
   color: var(--textcolor);
   text-shadow: 2px 2px 4px var(--textcolorshadow);
+}
+
+.gridFront__wiskunde--click {
+  border-radius: 1.3rem 1.3rem 0 0;
 }
 
 @media (min-width: 1200px) {
@@ -283,6 +299,10 @@ body {
   text-shadow: 2px 2px 4px var(--textcolorshadow);
 }
 
+.gridFront__natuurkunde--click {
+  border-radius: 1.3rem 1.3rem 0 0;
+}
+
 @media (min-width: 1200px) {
   .gridFront__natuurkunde {
     border-radius: 1.3rem 1.3rem 0 0;
@@ -301,6 +321,10 @@ body {
   padding: 1rem;
   color: var(--textcolor);
   text-shadow: 2px 2px 4px var(--textcolorshadow);
+}
+
+.gridFront__biologie--click {
+  border-radius: 1.3rem 1.3rem 0 0;
 }
 
 @media (min-width: 1200px) {
@@ -323,6 +347,10 @@ body {
   text-shadow: 2px 2px 4px var(--textcolorshadow);
 }
 
+.gridFront__geschiedenis--click {
+  border-radius: 1.3rem 1.3rem 0 0;
+}
+
 @media (min-width: 1200px) {
   .gridFront__geschiedenis {
     border-radius: 1.3rem 1.3rem 0 0;
@@ -343,6 +371,10 @@ body {
   text-shadow: 2px 2px 4px var(--textcolorshadow);
 }
 
+.gridFront__aarderijkskunde--click {
+  border-radius: 1.3rem 1.3rem 0 0;
+}
+
 @media (min-width: 1200px) {
   .gridFront__aarderijkskunde {
     border-radius: 1.3rem 1.3rem 0 0;
@@ -361,6 +393,10 @@ body {
   padding: 1rem;
   color: var(--textcolor);
   text-shadow: 2px 2px 4px var(--textcolorshadow);
+}
+
+.gridFront__bv--click {
+  border-radius: 1.3rem 1.3rem 0 0;
 }
 
 @media (min-width: 1200px) {
