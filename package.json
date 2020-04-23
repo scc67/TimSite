@@ -17,7 +17,11 @@
   },
   "homepage": "https://github.com/scc67/TimSite#readme",
   "devDependencies": {
-    "node": "^12.8.0",
-    "npm": "^6.10.3"
+    "gulp": "^4.0.2",
+    "node": "^12.13.2",
+    "npm": "^6.14.4"
+  },
+  "dependencies": {
+    "gulp-cli": "^2.2.0"
   }
 }
