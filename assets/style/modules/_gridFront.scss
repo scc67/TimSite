@@ -59,6 +59,10 @@
         padding: 2rem;
         grid-auto-rows: auto;
 
+        &--click {
+            display: block;
+        }
+
         @include atXlarge {
             display: block;
 
@@ -78,6 +82,10 @@
         &__#{$vak} {
             background-image: url("/assets/images/"+ $vak + "-lo-re.jpg");
             @include vakken;
+
+            &--click {
+                border-radius: 1.3rem 1.3rem 0 0;
+            }
 
             @include atXlarge {
                 border-radius: 1.3rem 1.3rem 0 0;

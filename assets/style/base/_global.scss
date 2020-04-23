@@ -1,3 +1,18 @@
+html {
+    box-sizing: border-box;
+    scroll-padding-top: 4rem;
+
+    @include atLarge {
+        scroll-padding-top: 6rem;
+    }
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
 body {
     width: 100%;
     padding: 0;
