@@ -1,5 +1,6 @@
 .gridFront {
     --mainbackround: rgba(33, 149, 243, 0.657);
+    --mainborder: rgb(23, 115, 190);
     --backgroundcontent: #2196F3;
     --textcolor: white;
     --textcolorhover: #bbb;
@@ -44,6 +45,7 @@
     }
 
     &__vak {
+        position: relative;
         background-color: var(--backgroundcontent);
         border-radius: 1.3rem;
         height: fit-content; //TODO Zorgend dat grid vakken naast elkaar qua achtergrond kleur even groot is, onafhankelijk van inhoud
@@ -51,16 +53,26 @@
 
     &__link {
         @include hover;
+
+        @include atXlarge {
+            pointer-events: none;
+        }
     }
 
     &__content {
         display: none;
+        border: 0.2rem solid var(--mainborder);
+        border-top-width: 0;
         border-radius: 0 0 1.3rem 1.3rem;
         padding: 2rem;
         grid-auto-rows: auto;
 
         &--click {
             display: block;
+            position: absolute;
+            width: 100%;
+            z-index: 1;
+            background-color: var(--backgroundcontent);
         }
 
         @include atXlarge {
