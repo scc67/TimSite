@@ -218,6 +218,12 @@ body {
   text-decoration: none;
 }
 
+@media (min-width: 1200px) {
+  .gridFront__link {
+    pointer-events: none;
+  }
+}
+
 .gridFront__content {
   display: none;
   border: 0.2rem solid var(--mainborder);
