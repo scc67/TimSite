@@ -23,5 +23,8 @@
     "git.showPushSuccessNotification": true,
 
     "svg.preview.background": "white",
-    "liveServer.settings.port": 5501
+    "liveServer.settings.port": 5501,
+    "cSpell.ignoreWords": [
+        "bootwatch"
+    ]
 }
